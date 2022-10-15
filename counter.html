@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Form</a>
+    <a href="counter.html">Counter</a>
+  </nav>
+  <blockquote>
+    Hey guys how are you?
+  </blockquote>
+  <p>This post has <span id="counter">0</span> likes</p>
+</body>
+<script>
+  function addLikes() {
+    let number = Math.floor(Math.random() * 10) + 1;
+    setTimeout(() => {
+      let counter = document.getElementById("counter");
+      counter.innerText = parseInt(counter.innerText, 10) + 1;
+      addLikes();
+    }, number + "00");
+  }
+  addLikes();
+</script>
+</html>

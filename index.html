@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  img {
+    width: 500px;
+    height: 700px;
+  }
+</style>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Form</a>
+    <a href="counter.html">Counter</a>
+    <a href="#inaccessible">Inaccessible form</a>
+    <a href="#lizard">A Lizard</a>
+  </nav>
+  <h1>Form Fun!</h1>
+  <form id="inaccessible" onsubmit="submitInaccessible()">
+    <h2>Inaccessible</h2>
+    <p>First Name</p>
+    <input type="text" />
+    <p>Last Name</p>
+    <input type="text" />
+    <p>Email</p>
+    <input type="email" />
+    <button type="submit">Submit</button>
+  </form>
+  <img id="lizard" src="unity.jpg" />
+</body>
+<script>
+  function submitInaccessible() {
+    alert('Wow you are good how did you know what I was asking?');
+  }
+  
+  function submitAccessible() {
+    alert('Thank you for submitting your data to me');
+  }
+</script>
+</html>

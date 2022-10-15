@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="form.html">Form</a>
+    <a href="counter.html">Counter</a>
+  </nav>
+  <form onsubmit="submitForm()">
+    <h1 tabindex="0">Try filling this out using only the screen reader</h1>
+    <label for="name">Name</label>
+    <input id="name" type="text">
+    <label for="dreamJob">Dream Job</label>
+    <input id="dreamJob" type="text">
+    <label for="color">Favorite color</label>
+    <input id="color" type="text">
+    <label for="animal">Favorite animal</label>
+    <input id="animal" type="text">
+    <button type="submit">Submit</button>
+  </form>
+</body>
+<script>
+  function submitForm() { alert('Submitted!'); }
+</script>
+</html>
